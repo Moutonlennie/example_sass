@@ -10,6 +10,16 @@ $font-sm: 14;
 
 nav {
     background-color: $primary-color;
+    ul {
+        list-style-type: none;
+        li{
+            a{
+                text-decoration: none;
+                color: $tertiary-color;
+                font-size: $font-sm;
+            }
+        }
+    }
 }
 .banner {
     h1 {
