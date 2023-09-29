@@ -17,6 +17,11 @@ $font-sm: 14;
 
 p {
     @extend %background-primary;
+    font-size: increaseFontSize();
+}
+
+@function increaseFontSize($size) {
+    @return $size * 2;
 }
 
 nav {
