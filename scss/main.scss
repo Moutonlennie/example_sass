@@ -39,10 +39,13 @@ footer {
     }
 } 
 
-@mixin paddingMargin() {
-    padding: 3px;
+@mixin paddingMargin($wpadding) {
+    padding: $wpadding;
     margin: 3px;
 }
-nav, .banner, .footer {
-    @include paddingMargin();
+nav {
+    @include paddingMargin(5px)
+}
+.banner, .footer {
+    @include paddingMargin(3px)
 }
