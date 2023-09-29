@@ -38,3 +38,11 @@ footer {
         text-align: center;
     }
 } 
+
+@mixin paddingMargin() {
+    padding: 3px;
+    margin: 3px;
+}
+nav, .banner, .footer {
+    @include paddingMargin();
+}
