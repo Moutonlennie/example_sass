@@ -31,11 +31,19 @@ nav {
         text-align: center;
     }
 }
+@mixin transition($transition...) {
+    transition: $transition;
+}
 footer {
     h3 {
         font-size: $font-md;
         color: $primary-color;
         text-align: center;
+    }
+    &:hover {
+        @include transition(color 0.5, background-color 1);
+        color: $secondary-color;
+        background-color: $tertiary-color;
     }
 } 
 
@@ -44,8 +52,8 @@ footer {
     margin: 3px;
 }
 nav {
-    @include paddingMargin(5px)
+    @include paddingMargin(5px);
 }
 .banner, .footer {
-    @include paddingMargin(3px)
+    @include paddingMargin(3px);
 }
